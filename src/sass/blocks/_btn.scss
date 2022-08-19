@@ -1,0 +1,26 @@
+.btn {
+	font-family: 'Proxima Nova Lt';
+
+	border-radius: 3px;
+
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 140%;
+
+	&-sky {
+		background-color: $sky;
+
+		color: $white;
+	}
+
+	&-light {
+		background-color: $white;
+
+		color: $sky;
+	}
+}

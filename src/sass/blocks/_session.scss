@@ -1,0 +1,94 @@
+.session {
+	font-family: 'El Messiri';
+}
+
+.session-title {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	margin-top: 150px;
+
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 140%;
+
+	&::before {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 30%;
+		left: 30%;
+	}
+
+	&::after {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+		transform: rotate(180%);
+		transform: rotate3d(0, 1, 0, 180deg);
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 30%;
+		right: 30%;
+	}
+}
+
+.session__card-list {
+	display: flex;
+
+	column-gap: 25px;
+
+	margin-top: 100px;
+}
+
+.session__card-big {
+	min-width: 415px;
+	min-height: 540px;
+	
+	background: url("./../img/img-girl/session-girl-big.png");
+	background-repeat: no-repeat;
+
+	border-radius: 10px;
+}
+
+.session__card-row {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+}
+
+.session__card-small {
+	min-width: 415px;
+	min-height: 260px;
+
+	background: url("./../img/img-girl/session-girl-small.png");
+	background-repeat: no-repeat;
+
+	border-radius: 10px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.session__card-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+
+	min-height: 90%;
+	max-width: 335px;
+
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+
+	margin-bottom: 40px;
+}

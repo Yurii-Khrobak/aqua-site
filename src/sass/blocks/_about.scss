@@ -1,0 +1,78 @@
+.about {
+	margin-top: 150px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.about__column {
+	display: flex;
+	flex-direction: column;
+}
+
+.about-title {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 140%;
+
+	&::before {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		left: 30%;
+	}
+
+	&::after {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+		transform: rotate(180%);
+		transform: rotate3d(0, 1, 0, 180deg);
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		right: 30%;
+	}
+}
+
+.about-card__row {
+	display: flex;
+	align-items: center;
+
+	column-gap: 85px;
+
+	margin-top: 100px;
+}
+
+.about-card__row-title {
+	font-family: 'Proxima Nova Lt';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 140%;
+
+	margin-bottom: 30px;
+}
+
+.about-card__row-main {
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 140%;
+}
+.about-card__row-img {
+	border-radius: 10px;
+}
