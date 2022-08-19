@@ -1,0 +1,97 @@
+.sale {
+	margin-top: 150px;
+}
+
+.sale__row {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+
+	margin-top: 100px;
+}
+
+.sale-title {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+
+	font-family: "El Messiri";
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 140%;
+
+	&::before {
+		content: "";
+		background: url("./../../img/design/design-img-sky.png");
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		left: 25%;
+	}
+
+	&::after {
+		content: "";
+		background: url("./../../img/design/design-img-sky.png");
+		transform: rotate(180%);
+		transform: rotate3d(0, 1, 0, 180deg);
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		right: 25%;
+	}
+}
+
+.sale__row-list {
+
+	a {
+		min-width: 270px;
+
+		font-family: "Proxima Nova Rg";
+		font-size: 18px;
+		line-height: 140%;
+	}
+
+	p {
+		font-family: "El Messiri";
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 140%;
+	}
+}
+
+.sale__row-list--item {
+	display: flex;
+	column-gap: 25px;
+
+	& + & {
+		margin-top: 30px;
+	}
+}
+
+.sale__row-img {
+	max-width: 525px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+
+	text-align: center;
+
+	img {
+		border-radius: 10px;
+	}
+
+	p {
+		font-family: "El Messiri";
+		font-weight: 700;
+		font-size: 21px;
+		line-height: 140%;
+	}
+}

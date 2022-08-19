@@ -1,0 +1,88 @@
+.comments__row {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.comments-title {
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	min-width: 0;
+
+	margin-top: 150px;
+	margin-bottom: 100px;
+
+	font-family: 'El Messiri';
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 140%;
+
+	&::before {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		left: 37%;
+	}
+
+	&::after {
+		content: '';
+		background: url('./../../img/design/design-img-sky.png');
+		transform: rotate(180%);
+		transform: rotate3d(0, 1, 0, 180deg);
+
+		height: 14px;
+		width: 28px;
+
+		position: absolute;
+		top: 35%;
+		right: 37%;
+	}
+}
+
+.slider-item {
+	min-width: 0;
+
+	max-width: 635px;
+	background-color: $sky;
+	border-radius: 10px;
+
+	padding-top: 55px;
+	padding-bottom: 55px;
+	padding-left: 60px;
+	padding-right: 60px;
+
+	opacity: 0.4;
+	transform: scale(0.8, 0.8);
+}
+
+.slick-center {
+	opacity: 1;
+	transform: scale(1, 1);
+}
+
+.item__author-name {
+	min-width: 0;
+
+	font-family: 'Proxima Nova Rg';
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 140%;
+
+	margin-bottom: 20px;
+}
+
+.item__main {
+	min-width: 0;
+
+	font-family: 'Proxima Nova Lt';
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 140%;
+}
